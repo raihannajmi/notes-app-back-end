@@ -11,14 +11,9 @@ const routes = [
     method: 'POST',
     path: '/notes',
     handler: addNoteHandler,
-    options: {
-      cors: {
-        origin: ['*'],
-      },
-    },
   },
   {
-    method: 'POST',
+    method: 'GET',
     path: '/notes',
     handler: getAllNotesHandler,
   },
